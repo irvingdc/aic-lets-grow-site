@@ -1,0 +1,23 @@
+.container {
+  background-image: url("https://www.letsgrow.com/wp-content/uploads/2019/07/tomaten-e1571232831389-1200x713.jpg");
+  position: relative;
+  padding: 13rem 0 20rem;
+  background-size: cover;
+  background-position: center center;
+}
+.container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    #1e1a34 0,
+    rgba(30, 26, 52, 0.95) 50%,
+    rgba(0, 122, 83, 0.6) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e1a34',endColorstr='#99007a53',GradientType=1);
+}

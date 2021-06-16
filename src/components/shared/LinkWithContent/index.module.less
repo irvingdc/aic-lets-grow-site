@@ -1,0 +1,48 @@
+.linkContainer {
+  width: 100%;
+  padding-bottom: 30px;
+  a {
+    max-width: 45%;
+    font-size: 18px;
+    font-weight: 100;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+  }
+  > div {
+    position: absolute;
+    width: 55%;
+    right: 20px;
+    top: 20px;
+    padding: 16px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s;
+    background: #e4e4e4;
+    p {
+      font-size: 17px;
+    }
+  }
+}
+.linkContainer:hover {
+  a {
+    border-bottom: 4px solid @primary;
+  }
+  > div {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@media (max-width: 1070px) {
+  .linkContainer {
+    a {
+      font-size: 16px;
+      width: 50%;
+    }
+    > div {
+      width: 50%;
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}
