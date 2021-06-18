@@ -20,10 +20,8 @@ module.exports = {
         lessOptions: {
           javascriptEnabled: true,
           modifyVars: {
-            primary: "#8dbe40",
-            secondary: "#5c7d2b",
-            lightgray: "#f5f7f3",
-            link: "#1890ff",
+            primary: "#1e1a34",
+            secondary: "#007a53",
           },
         },
       },

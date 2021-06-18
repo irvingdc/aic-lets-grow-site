@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 6px 0px 0px;
+  min-height: 70px;
+  > * {
+    width: 100%;
+  }
+  label {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  input,
+  select {
+    height: 30px;
+    background: white;
+    border: 1px solid #c1c1c1;
+  }
+  textarea {
+    height: 60px;
+    background: white;
+    border: 1px solid #c1c1c1;
+  }
+}
+.checkboxClass {
+  input {
+    height: auto;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+.error,
+.noerror {
+  margin: 0px !important;
+  color: #ff5656 !important;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+}
+.noerror {
+  color: transparent !important;
+}

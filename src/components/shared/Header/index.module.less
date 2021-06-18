@@ -1,14 +1,24 @@
 .container {
-  background-image: url("https://www.letsgrow.com/wp-content/uploads/2019/07/tomaten-e1571232831389-1200x713.jpg");
+  background-image: url("../../../images/photos/main.jpeg");
   position: relative;
-  padding: 13rem 0 20rem;
+  padding: 160px 0 290px;
   background-size: cover;
   background-position: center center;
+  overflow: hidden;
+  * {
+    color: white;
+    z-index: 90;
+    position: relative;
+  }
+  p {
+    font-size: 20px;
+    line-height: 32px;
+  }
 }
 .container::before {
   content: "";
   display: block;
-  position: absolute;
+  position: absolute !important;
   left: 0;
   top: 0;
   width: 100%;
@@ -20,4 +30,43 @@
     rgba(0, 122, 83, 0.6) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e1a34',endColorstr='#99007a53',GradientType=1);
+  z-index: 10;
+}
+.container::after {
+  content: "";
+  position: absolute !important;
+  display: block;
+  width: 100%;
+  height: 290px;
+  background-image: url("../../../images/graphics/shape-header-big.svg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  bottom: 0;
+  z-index: 10;
+  left: 0px;
+}
+
+@media (max-width: 1100px) {
+  .container {
+    padding: 128px 0 176px;
+    p {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+  .container::after {
+    height: 150px;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    padding: 128px 0 96px;
+    h1 {
+      font-size: 34px;
+    }
+  }
+  .container::after {
+    height: 60px;
+  }
 }

@@ -1,0 +1,37 @@
+.container {
+  color: white;
+  background: @primary;
+  border: none;
+  font-size: 16px;
+  height: 36px;
+  padding: 0px 16px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+  * {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  img {
+    height: 16px;
+    margin-left: 10px;
+    * {
+      fill: white;
+    }
+  }
+}
+.ghostClass {
+  background-color: white;
+  border: 2px solid @primary;
+  * {
+    color: @primary !important;
+  }
+}
+.container:hover {
+  filter: brightness(0.95);
+}
