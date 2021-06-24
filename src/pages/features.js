@@ -11,7 +11,7 @@ export default () => {
       <Nav />
       <Header>
         <h1>特点</h1>
-        <p>Curious about our features read more about them over here.</p>
+        <p>欲知更多特点，请阅读此处详情。</p>
       </Header>
       <Layout>
         <FeaturesCards />

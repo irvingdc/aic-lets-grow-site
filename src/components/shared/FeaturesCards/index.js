@@ -70,10 +70,7 @@ export default () => (
     <div className={intro}>
       <h2>特点</h2>
       <p>
-        LetsGrow.com enables registration of crop data through MyLetsGrow.
-        Allowing you to centralize the data and make predictions as well as
-        process it in analytical tools. Curious about all the possibilities of
-        MyLetsGrow? You will find more information on this page.
+        LetsGrow允许通过MyLetsGrow登记管理作物数据。允许您集中数据、进行预测以及在分析工具中处理数据。想了解MyLetsGrow的所有可能性吗？您将在本页找到更多信息。
       </p>
     </div>
     <div className={grid}>

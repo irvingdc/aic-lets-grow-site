@@ -18,20 +18,20 @@ export default ({ path }) => {
         <div className={content}>
           <div>
             <div>
-              <h4>How can we assist?</h4>
+              <h4>我们怎样助力？</h4>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://gpe.letsgrow.com/psychro"
               >
-                Psychrometic Calculator
+                焓湿图计算器
               </a>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://gpe.letsgrow.com/"
               >
-                GPE Simulator
+                GPE模拟器
               </a>
             </div>
             <div>

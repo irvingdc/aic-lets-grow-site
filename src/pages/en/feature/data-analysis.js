@@ -22,10 +22,20 @@ export default () => {
           strategy is best for your crop. By combining different (proven)
           cultivation models with your data, we can show you exactly what is
           going right and what potential areas of improvement have been detected
-          in your greenhouse. Basing your decisions on data enables you to:
-          Reflect on what you are doing and if your assumptions are correct.
-          Gain insight into areas where there is room for improvement. Optimise
-          both production and quality.
+          in your greenhouse.
+          <br />
+          <br />
+          Basing your decisions on data enables you to:
+          <br />
+          <ul>
+            <li>
+              Reflect on what you are doing and if your assumptions are correct.
+            </li>
+            <li>
+              Gain insight into areas where there is room for improvement.
+            </li>
+            <li>Optimise both production and quality.</li>
+          </ul>{" "}
         </p>
       </Layout>
       <Footer
