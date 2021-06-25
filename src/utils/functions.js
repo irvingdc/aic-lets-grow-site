@@ -29,7 +29,7 @@ export const decodeEntities = (function () {
   return decodeHTMLEntities;
 })();
 
-function getURLParameter(name) {
+export const getURLParameter = (name) => {
   if (typeof window === "undefined") return;
   return decodeURIComponent(
     (RegExp(`${name}=(.+?)(&|$)`).exec(window.location.search) || [
@@ -37,4 +37,4 @@ function getURLParameter(name) {
       "error",
     ])[1]
   );
-}
+};

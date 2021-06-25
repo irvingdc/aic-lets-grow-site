@@ -7,7 +7,7 @@ export default () => {
   return (
     <>
       <Nav />
-      <LargeBoxSide leftContent={<h1>Login</h1>}>
+      <LargeBoxSide leftContent={<h1>Login 2</h1>}>
         <iframe
           title="Dit is een iframe"
           loading="lazy"

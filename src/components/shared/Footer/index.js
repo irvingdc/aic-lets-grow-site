@@ -6,7 +6,7 @@ import logo from "images/logoalt.png";
 
 export default ({ path }) => {
   return (
-    <>
+    <footer>
       <Layout>
         <div className={pathClass}>
           <p>
@@ -49,6 +49,6 @@ export default ({ path }) => {
           <p>© {new Date().getFullYear()} LetsGrow.com.cn</p>
         </Layout>
       </div>
-    </>
+    </footer>
   );
 };

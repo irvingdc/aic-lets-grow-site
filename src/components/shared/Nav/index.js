@@ -24,12 +24,16 @@ import loupe from "images/icons/loupe.svg";
 import loupeBlack from "images/icons/loupe-black.svg";
 import world from "images/icons/world.svg";
 import worldBlack from "images/icons/world-black.svg";
+import SearchBar from "components/shared/SearchBar";
 
 const LanguageSwitcher = ({ scrolled }) => {
   if (typeof window === "undefined") {
     return null;
   }
-  let pathname = window?.location?.pathname?.replace("/en/", "/");
+  let pathname = `${window?.location?.pathname?.replace("/en", "")}${
+    window?.location?.search
+  }`;
+  console.log("pathname - ", pathname);
   let enLink = `/en/${pathname}`.replace(/\/\//g, "/");
   let zhLink = pathname;
   return (
@@ -49,6 +53,7 @@ const LanguageSwitcher = ({ scrolled }) => {
 export default () => {
   let [display, setDisplay] = useState(false);
   let [scrolled, setScrolled] = useState(false);
+  let [displaySearch, setDisplaySearch] = useState(false);
 
   useEffect(() => {
     if (typeof window !== undefined) {
@@ -67,7 +72,7 @@ export default () => {
     }
   }, []);
   return (
-    <div
+    <nav
       className={[
         container,
         display ? notBlurred : "",
@@ -92,23 +97,27 @@ export default () => {
         </Link>
         <div className={[content, display ? displayed : ""].join(" ")}>
           <Link to="/">发布会</Link>
-          <Link to="/features">特点</Link>
-          <Link to="/about">关于我们</Link>
-          <Link to="/contact">联系我们</Link>
-          <Link to="/login" className={leftHidden}>
+          <Link to="/features/">特点</Link>
+          <Link to="/about/">关于我们</Link>
+          <Link to="/contact/">联系我们</Link>
+          <Link to="/login/" className={leftHidden}>
             Login
           </Link>
         </div>
         <div onClick={() => setDisplay(false)} className={rightButtons}>
-          <Link to="/login" className={[login, rightHidden].join(" ")}>
+          <Link to="/login/" className={[login, rightHidden].join(" ")}>
             Login
           </Link>
-          <Link to="/" className={search}>
+          <button
+            className={search}
+            onClick={() => setDisplaySearch(!displaySearch)}
+          >
             <img src={scrolled ? loupeBlack : loupe} alt="Search" />
-          </Link>
+          </button>
           <LanguageSwitcher scrolled={scrolled} />
+          <SearchBar display={displaySearch} lang="zh" label="Type here..." />
         </div>
       </Layout>
-    </div>
+    </nav>
   );
 };

@@ -9,7 +9,10 @@ export default ({ targetDate }) => {
   let [seconds, setSeconds] = useState("");
 
   useEffect(() => {
+    let myTimezoneOffset = new Date().getTimezoneOffset();
     var m2 = moment(targetDate);
+    m2 = m2.subtract(myTimezoneOffset, "minutes");
+    m2 = m2.subtract(8 * 60, "minutes");
     let startTimer = () => {
       var m1 = moment();
       var m3 = m2.diff(m1, "minutes");
