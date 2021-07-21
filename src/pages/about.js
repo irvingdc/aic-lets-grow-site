@@ -4,11 +4,13 @@ import SmallBoxSide from "components/shared/SmallBoxSide";
 import Footer from "components/shared/Footer";
 import Nav from "components/shared/Nav";
 import bat from "images/photos/Batenburg.jpeg";
+import Meta from "components/shared/Meta";
 
 export default () => {
   return (
     <>
       <Nav />
+      <Meta url="/about/" />
       <Header>
         <h1>关于我们</h1>
         <p></p>
@@ -16,16 +18,20 @@ export default () => {
       <SmallBoxSide img={bat}>
         <h2>组织架构</h2>
         <p>
-          LetsGrow是Batenburg Techniek集团的子公司。Batenburg
-          Techniek集团是位于智能产业中心的技术服务提供商。Batenburg拥有超过1000名专家，致力于使工业、基础设施和园艺领域的生产、种植和房地产客户变得更智能、更安全和更可持续。从持久的客户关系开始，我们以充满活力的态度和创造力助力项目的成功。了解更多关于Batenburg和我们的专家，请访问
+          LetsGrow.com是豪根道集团的一部分。
+          <br />
+          豪根道公司是智慧园艺产业中的专家。基于最先进的环控计算机IIVO和尽职专业的专家，豪根道使园艺产业更加智慧、更加安全且更加可持续。
+          <br />
+          经过超过8年在中国的发展，我们的团队与相信智慧园艺使世界变得更美好的客户与合作伙伴建立了稳固的网络。
+          <br />
+          阅读更多关于豪根道与我们的专家，请访问{" "}
           <a
-            href="https://www.batenburg.nl"
+            href="https://www.hoogendoorn.asia"
             target="_blank"
             rel="noopener noreferrer"
           >
-            www.batenburg.nl
+            www.hoogendoorn.asia
           </a>
-          .
         </p>
       </SmallBoxSide>
       <Footer path="关于我们" />

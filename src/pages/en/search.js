@@ -5,6 +5,7 @@ import Footer from "components/shared/FooterEN";
 import Nav from "components/shared/NavEN";
 import { getURLParameter } from "src/utils/functions";
 import { Link } from "gatsby";
+import Meta from "components/shared/Meta";
 
 export default ({ location }) => {
   let [data, setData] = useState(null);
@@ -38,6 +39,7 @@ export default ({ location }) => {
   return (
     <>
       <Nav />
+      <Meta url="/en/search/" />
       <Header>
         <h1>Search Results</h1>
       </Header>

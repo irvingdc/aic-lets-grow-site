@@ -3,12 +3,14 @@ import Header from "components/shared/Header";
 import Layout from "components/shared/Layout";
 import Footer from "components/shared/Footer";
 import Nav from "components/shared/Nav";
+import Meta from "components/shared/Meta";
 
 export default () => {
   let title = "对比数据";
   return (
     <>
       <Nav />
+      <Meta url="/feature/comparing-data/" />
       <Header>
         <h1>{title}</h1>
       </Header>

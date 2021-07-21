@@ -3,11 +3,13 @@ import LargeBoxSide from "components/shared/LargeBoxSide";
 import Footer from "components/shared/Footer";
 import Nav from "components/shared/Nav";
 import ContactForm from "components/shared/ContactForm";
+import Meta from "components/shared/Meta";
 
 export default () => {
   return (
     <>
       <Nav />
+      <Meta url="/contact/" />
       <LargeBoxSide
         reverse
         leftContent={

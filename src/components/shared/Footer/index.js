@@ -46,7 +46,17 @@ export default ({ path }) => {
       </Layout>
       <div className={grayContent}>
         <Layout>
-          <p>© {new Date().getFullYear()} LetsGrow.com.cn</p>
+          <p>
+            © {new Date().getFullYear()} LetsGrow.com.cn
+            <br />
+            <a
+              href="https://beian.miit.gov.cn/#/Integrated/index"
+              target="_blank"
+              rel="noopener"
+            >
+              京ICP备19007319号-7
+            </a>
+          </p>
         </Layout>
       </div>
     </footer>

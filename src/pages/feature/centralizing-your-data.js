@@ -3,12 +3,14 @@ import Header from "components/shared/Header";
 import Layout from "components/shared/Layout";
 import Footer from "components/shared/Footer";
 import Nav from "components/shared/Nav";
+import Meta from "components/shared/Meta";
 
 export default () => {
   let title = "数据中心化";
   return (
     <>
       <Nav />
+      <Meta url="/feature/centralizing-your-data/" />
       <Header>
         <h1>{title}</h1>
       </Header>

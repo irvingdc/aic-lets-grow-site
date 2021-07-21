@@ -4,11 +4,13 @@ import Layout from "components/shared/Layout";
 import Timer from "components/shared/Timer";
 import Footer from "components/shared/Footer";
 import Nav from "components/shared/Nav";
+import Meta from "components/shared/Meta";
 
 export default () => {
   return (
     <>
       <Nav />
+      <Meta url="/" />
       <Header>
         <h1>Stay Tuned for our Event</h1>
         <Timer targetDate="2021-08-18 15:00:00" />
@@ -25,7 +27,7 @@ export default () => {
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </Layout>
-      <Footer/>
+      <Footer />
     </>
   );
 };

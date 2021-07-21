@@ -4,11 +4,13 @@ import SmallBoxSide from "components/shared/SmallBoxSide";
 import Footer from "components/shared/FooterEN";
 import Nav from "components/shared/NavEN";
 import bat from "images/photos/Batenburg.jpeg";
+import Meta from "components/shared/Meta";
 
 export default () => {
   return (
     <>
       <Nav />
+      <Meta url="/en/about/" />
       <Header>
         <h1>About LetsGrow.com.cn</h1>
         <p></p>
@@ -16,22 +18,24 @@ export default () => {
       <SmallBoxSide img={bat}>
         <h2>Organization</h2>
         <p>
-          LetsGrow is part of Batenburg Techniek. Batenburg Techniek operates in
-          the center of smart industry as a provider of technical services. With
-          over 1.000 specialists Batenburg aims to make production, growing and
-          real estate of customers in the areas of industry, infrastructure and
-          horticulture smarter, safer and more sustainable. Starting from long
-          lasting customer relations they work on successful projects with an
-          energetic attitude and creativity. Read more about Batenburg and our
-          specialists at{" "}
+          LetsGrow.com.cn is part of Hoogendoorn Company.
+          <br />
+          Hoogendoorn Company is an expert in smart horticulture industry. With
+          the most advanced climate computer IIVO and a dedicated team of
+          expert, Hoogendoorn made the horticulture smarter, safer and more
+          sustainable. <br />
+          With More than 8 years development in China, our team build a strong
+          network of customer and partner who believe that smart horticulture is
+          a state of mind to make the world better.
+          <br />
+          Read more about Hoogendoorn and our specialists at{" "}
           <a
-            href="https://www.batenburg.nl"
+            href="https://www.hoogendoorn.asia"
             target="_blank"
             rel="noopener noreferrer"
           >
-            www.batenburg.nl
+            www.hoogendoorn.asia
           </a>
-          .
         </p>
       </SmallBoxSide>
       <Footer path="About" />
