@@ -19,7 +19,7 @@ export default () => {
             </h1>
             <p>
               Any questions about MyLetsGrow or our services? Please contact us
-              by filling in the form or call us (+31 (0)10 460 81 08).
+              by filling in the form or call us（+86（0）10 6501 6548).
             </p>
           </>
         }
