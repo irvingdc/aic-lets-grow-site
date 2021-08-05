@@ -5,6 +5,7 @@ import Timer from "components/shared/Timer";
 import Footer from "components/shared/FooterEN";
 import Nav from "components/shared/NavEN";
 import Meta from "components/shared/Meta";
+import { intro } from "../index.module.less";
 
 export default () => {
   return (
@@ -17,12 +18,12 @@ export default () => {
         <p></p>
       </Header>
       <Layout>
-        <h2>
-          Features
-        </h2>
-        <p>
+        <div className={intro}>
+          <h2>Features</h2>
+          <p>
           LetsGrow.com allows you to register crop-related data in the MyLetsGrow platform. Among other things, it is possible to centralise data, to make predictions and to use analysis tools. Curious about all the options with MyLetsGrow? Read more about our existing features here. New features are also being developed all the time. 
-        </p>
+          </p>
+        </div>
       </Layout>
       <Footer/>
     </>
