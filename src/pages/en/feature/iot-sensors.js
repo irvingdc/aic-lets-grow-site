@@ -44,7 +44,7 @@ export default () => {
       <Footer
         path={
           <>
-            特点<i>/</i>
+            Features<i>/</i>
             {title}
           </>
         }
