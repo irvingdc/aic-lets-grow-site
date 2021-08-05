@@ -6,6 +6,7 @@ import Footer from "components/shared/Footer";
 import Nav from "components/shared/Nav";
 import Meta from "components/shared/Meta";
 import { intro } from "./index.module.less";
+import { Link } from "gatsby";
 
 export default () => {
   return (
@@ -21,7 +22,10 @@ export default () => {
         <div className={intro}>
           <h2>特点</h2>
           <p>
-            LetsGrow.com.cn将作物相关的数据登记到MyLetsGrow平台。多种数据的汇集，使基于数据集中的预测与分析成为可能。对MyLetsGrow的所有选项感到好奇？阅读这里了解更多现有特点。新的特点也在不断地更新和开发。
+            LetsGrow.com.cn将作物相关的数据登记到MyLetsGrow平台。
+            多种数据的汇集，使基于数据集中的预测与分析成为可能。
+            对MyLetsGrow的所有选项感到好奇？阅读<Link to="/features/">这里</Link>了解更多现有特点。
+            新的特点也在不断地更新和开发。
           </p>
         </div>
       </Layout>
