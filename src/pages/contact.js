@@ -15,11 +15,11 @@ export default () => {
         leftContent={
           <>
             <h1>
-              <b>Customer Service</b>
+              <b>客户服务</b>
             </h1>
             <p>
-              Any questions about MyLetsGrow or our services? Please contact us
-              by filling in the form or call us (+31 (0)10 460 81 08).
+              对于MyLetsGrow或者我们的服务有任何问题？
+              请通过填写表格或者电话（+86（0）10 6501 6548）联系我们。
             </p>
           </>
         }
