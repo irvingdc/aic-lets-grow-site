@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "components/shared/Header";
 import Layout from "components/shared/Layout";
-import Footer from "components/shared/FooterEN";
+import Footer from "components/shared/Footer";
 import Nav from "components/shared/Nav";
 import Meta from "components/shared/Meta";
 
