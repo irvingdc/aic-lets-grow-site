@@ -26,7 +26,7 @@ export default () => {
       >
         <ContactForm />
       </LargeBoxSide>
-      <Footer path="Contact" />
+      <Footer path="联系我们" />
     </>
   );
 };

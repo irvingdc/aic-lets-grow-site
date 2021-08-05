@@ -2,7 +2,7 @@ import React from "react";
 import Header from "components/shared/Header";
 import Layout from "components/shared/Layout";
 import Footer from "components/shared/Footer";
-import Nav from "components/shared/Nav";
+import Nav from "components/shared/NavEN";
 import Meta from "components/shared/Meta";
 
 export default () => {

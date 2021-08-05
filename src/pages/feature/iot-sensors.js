@@ -2,7 +2,7 @@ import React from "react";
 import Header from "components/shared/Header";
 import Layout from "components/shared/Layout";
 import Footer from "components/shared/FooterEN";
-import Nav from "components/shared/NavEN";
+import Nav from "components/shared/Nav";
 import Meta from "components/shared/Meta";
 
 export default () => {
@@ -40,7 +40,7 @@ export default () => {
       <Footer
         path={
           <>
-            Features<i>/</i>
+            特点<i>/</i>
             {title}
           </>
         }
