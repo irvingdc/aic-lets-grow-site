@@ -12,19 +12,14 @@ export default () => {
       <Nav />
       <Meta url="/" />
       <Header>
-        <h1>Stay Tuned for our Event</h1>
+        <h1>敬请关注我们的发布会</h1>
         <Timer targetDate="2021-08-18 15:00:00" />
         <p></p>
       </Header>
       <Layout>
+        <h2>特点</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          LetsGrow.com.cn将作物相关的数据登记到MyLetsGrow平台。多种数据的汇集，使基于数据集中的预测与分析成为可能。对MyLetsGrow的所有选项感到好奇？阅读这里了解更多现有特点。新的特点也在不断地更新和开发。
         </p>
       </Layout>
       <Footer />
