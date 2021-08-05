@@ -9,7 +9,7 @@ export default () => {
     <>
       <Nav />
       <Meta url="/login/" />
-      <LargeBoxSide leftContent={<h1>Login 2</h1>}>
+      <LargeBoxSide leftContent={<h1>登陆</h1>}>
         <iframe
           title="Dit is een iframe"
           loading="lazy"
