@@ -2,7 +2,7 @@ import React from "react";
 import LargeBoxSide from "components/shared/LargeBoxSide";
 import Footer from "components/shared/FooterEN";
 import Nav from "components/shared/NavEN";
-import ContactForm from "components/shared/ContactForm";
+import ContactFormEN from "components/shared/ContactFormEN";
 import Meta from "components/shared/Meta";
 
 export default () => {
@@ -24,7 +24,7 @@ export default () => {
           </>
         }
       >
-        <ContactForm />
+        <ContactFormEN />
       </LargeBoxSide>
       <Footer path="Contact" />
     </>
