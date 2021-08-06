@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { container } from "./index.module.less";
 import moment from "moment";
 
-export default ({ targetDate }) => {
+export default ({ targetDate, lang="EN" }) => {
   let [days, setDays] = useState("");
   let [hours, setHours] = useState("");
   let [minutes, setMinutes] = useState("");
@@ -37,19 +37,19 @@ export default ({ targetDate }) => {
     <div className={container}>
       <div>
         <h3>{days}</h3>
-        <p>days</p>
+        <p>{lang=='EN'?"days":"天"}</p>
       </div>
       <div>
         <h3>{hours}</h3>
-        <p>hours</p>
+        <p>{lang=='EN'?"hours":"小时"}</p>
       </div>
       <div>
         <h3>{minutes}</h3>
-        <p>minutes</p>
+        <p>{lang=='EN'?"minutes":"分钟"}</p>
       </div>
       <div>
         <h3>{seconds}</h3>
-        <p>seconds</p>
+        <p>{lang=='EN'?"seconds":"秒"}</p>
       </div>
     </div>
   );

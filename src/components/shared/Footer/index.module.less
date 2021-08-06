@@ -1,7 +1,7 @@
 .pathClass {
-  max-width: 900px;
+  //max-width: 900px;
   margin: auto;
-  padding-top: 50px;
+  padding-top: 150px;
   padding-bottom: 10px;
   * {
     display: inline-block;
@@ -18,8 +18,9 @@
 .content {
   display: flex;
   justify-content: space-between;
-  max-width: 900px;
+  max-width: 630px;
   margin: auto;
+  margin-left: 0;
   padding: 0px 0px 70px;
   > div {
     display: flex;
@@ -69,6 +70,9 @@
 }
 
 @media (max-width: 520px) {
+  .pathClass {
+    padding-top: 75px;
+  }
   .content {
     flex-direction: column;
     > div {

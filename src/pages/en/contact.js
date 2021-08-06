@@ -2,7 +2,7 @@ import React from "react";
 import LargeBoxSide from "components/shared/LargeBoxSide";
 import Footer from "components/shared/FooterEN";
 import Nav from "components/shared/NavEN";
-import ContactForm from "components/shared/ContactForm";
+import ContactFormEN from "components/shared/ContactFormEN";
 import Meta from "components/shared/Meta";
 
 export default () => {
@@ -19,12 +19,12 @@ export default () => {
             </h1>
             <p>
               Any questions about MyLetsGrow or our services? Please contact us
-              by filling in the form or call us (+31 (0)10 460 81 08).
+              by filling in the form or call us（+86（0）10 6501 6548).
             </p>
           </>
         }
       >
-        <ContactForm />
+        <ContactFormEN />
       </LargeBoxSide>
       <Footer path="Contact" />
     </>

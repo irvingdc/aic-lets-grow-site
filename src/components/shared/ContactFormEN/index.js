@@ -97,12 +97,12 @@ export default () => {
       <Layout>
         <div className={content}>
           <form onSubmit={sendData}>
-            <h1>问题</h1>
-            <p>请留下您的联系方式，我们将会第一时间联系您。</p>
+            <h1>Questions</h1>
+            <p>Leave your contact information and we will reach out to you.</p>
 
             <Input
               onChange={handleChange}
-              label="姓名"
+              label="Name"
               value={values["name"]}
               name="name"
               disabled={loading || sent}
@@ -111,7 +111,7 @@ export default () => {
             />
             <Input
               onChange={handleChange}
-              label="电子邮箱"
+              label="Email"
               value={values["email"]}
               name="email"
               type="email"
@@ -121,7 +121,7 @@ export default () => {
             />
             <Input
               onChange={handleChange}
-              label="电话号码"
+              label="Phone Number"
               value={values["phone"]}
               name="phone"
               type="number"
@@ -129,7 +129,7 @@ export default () => {
             />
             <Input
               onChange={handleChange}
-              label="您的问题"
+              label="Your Question"
               value={values["question"]}
               name="question"
               type="textarea"
@@ -139,7 +139,7 @@ export default () => {
             />
             <Input
               onChange={handleChange}
-              label="我同意我提供的数据将会被LetsGrow.com.cn处理"
+              label="I agree that my data will be processed by LetsGrow.com"
               value={values["data_agreement"]}
               name="data_agreement"
               type="checkbox"
@@ -154,7 +154,7 @@ export default () => {
                 </p>
               ) : (
                 <Button disabled={loading}>
-                  {loading ? "Loading..." : "提交"}
+                  {loading ? "Loading..." : "Submit"}
                 </Button>
               )}
             </div>

@@ -36,8 +36,8 @@ export default ({ path }) => {
             </div>
             <div>
               <h4>LetsGrow.com.cn</h4>
-              <Link to="/about">About Us</Link>
-              <Link to="/Contact">Contact</Link>
+              <Link to="/en/about">About Us</Link>
+              <Link to="/en/contact">Contact</Link>
             </div>
           </div>
 

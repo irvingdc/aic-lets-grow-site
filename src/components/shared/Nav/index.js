@@ -106,7 +106,7 @@ export default () => {
         </div>
         <div onClick={() => setDisplay(false)} className={rightButtons}>
           <Link to="/login/" className={[login, rightHidden].join(" ")}>
-            Login
+            登陆
           </Link>
           <button
             className={search}
