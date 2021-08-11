@@ -18,7 +18,7 @@ export default () => {
           height="720"
         ></iframe>
       </LargeBoxSide>
-      <Footer path="Login" />
+      <Footer path="登录" />
     </>
   );
 };

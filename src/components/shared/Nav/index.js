@@ -101,7 +101,7 @@ export default () => {
           <Link to="/about/">关于我们</Link>
           <Link to="/contact/">联系我们</Link>
           <Link to="/login/" className={leftHidden}>
-            Login
+            登录
           </Link>
         </div>
         <div onClick={() => setDisplay(false)} className={rightButtons}>
