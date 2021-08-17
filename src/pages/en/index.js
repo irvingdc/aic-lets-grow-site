@@ -15,7 +15,7 @@ export default () => {
       <Meta url="/en/" />
       <Header>
         <h1>Stay Tuned for our Event</h1>
-        <Timer targetDate="2021-08-18 15:00:00" />
+        <Timer targetDate="2021-08-23 15:00:00" />
         <p></p>
       </Header>
       <Layout>

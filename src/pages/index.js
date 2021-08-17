@@ -15,7 +15,7 @@ export default () => {
       <Meta url="/" />
       <Header>
         <h1>敬请关注我们的发布会</h1>
-          <Timer targetDate="2021-08-18 15:00:00" lang="ZH"/>
+          <Timer targetDate="2021-08-23 15:00:00" lang="ZH"/>
         <p></p>
       </Header>
       <Layout>
