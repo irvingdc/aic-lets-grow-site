@@ -1,12 +1,13 @@
 import React from "react";
 import Header from "components/shared/Header";
 import Layout from "components/shared/Layout";
-import Timer from "components/shared/Timer";
 import Footer from "components/shared/Footer";
 import Nav from "components/shared/Nav";
 import Meta from "components/shared/Meta";
 import { intro } from "./index.module.less";
 import { Link } from "gatsby";
+import video from "images/trailer.mp4"
+import poster from "images/poster.jpeg"
 
 export default () => {
   return (
@@ -14,9 +15,12 @@ export default () => {
       <Nav />
       <Meta url="/" />
       <Header>
-        <h1>敬请关注我们的发布会</h1>
-          <Timer targetDate="2021-08-23 15:00:00" lang="ZH"/>
-        <p></p>
+        <h1>敬请持续关注我们8月28日的更新发布</h1>
+        <div>
+          <video controls autolay style={{ "width": "100%" }} poster={poster}>
+            <source src={video} type="video/mp4" />
+          </video>
+        </div>
       </Header>
       <Layout>
         <div className={intro}>
