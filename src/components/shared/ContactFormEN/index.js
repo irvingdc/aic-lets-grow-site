@@ -72,7 +72,7 @@ export default () => {
     }
     setLoading(true);
     console.log("Sending values", values)
-    fetch(`/contact.php`, {
+    fetch(`/wordpress/contact.php`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
