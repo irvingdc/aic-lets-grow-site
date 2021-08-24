@@ -52,29 +52,32 @@ export default () => {
     console.log("finished");
   };
 
-  let sendData = async (e) => {
+
+  let sendData = (e) => {
     e.preventDefault();
+    console.log("values",values)
+    if (loading) {
+      console.log("loading")
+      return;
+    }
     setValidateNow(true);
     if (
-      loading ||
       !values.name ||
       !values.email ||
       !values.question ||
-      !values.telephone
+      !values.phone
     ) {
+      console.log("nothing...")
       return false;
     }
     setLoading(true);
-    let ip_address = await getIP();
-    let data = {
-      ...values,
-    };
-    fetch(`/`, {
+    console.log("Sending values", values)
+    fetch(`/wordpress/contact.php`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(data),
+      body: JSON.stringify(values),
     })
       .then((response) => response.json())
       .then((data) => {
@@ -87,7 +90,7 @@ export default () => {
         console.error("Error:", error);
         setLoading(false);
         alert(
-          "An error happened, please send us an email to info@letsgrow.com"
+          "An error happened, please call us on +86（0）10 6501 6548"
         );
       });
   };

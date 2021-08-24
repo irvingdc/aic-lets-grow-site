@@ -32,49 +32,36 @@ export default () => {
     }
   }, []);
 
-  let getIP = async () => {
-    return new Promise((resolve) => {
-      try {
-        fetch("https://www.cloudflare.com/cdn-cgi/trace")
-          .then((response) => response.text())
-          .then((data) => {
-            resolve(
-              data?.replace(/ts/g, "")?.replace(/\n/g, "")?.split("=")[3]
-            );
-          });
-      } catch (e) {
-        resolve("");
-      }
-    });
-  };
 
   let terminate = () => {
     console.log("finished");
   };
 
-  let sendData = async (e) => {
+  let sendData = (e) => {
     e.preventDefault();
+    console.log("values",values)
+    if (loading) {
+      console.log("loading")
+      return;
+    }
     setValidateNow(true);
     if (
-      loading ||
       !values.name ||
       !values.email ||
       !values.question ||
-      !values.telephone
+      !values.phone
     ) {
+      console.log("nothing...")
       return false;
     }
     setLoading(true);
-    let ip_address = await getIP();
-    let data = {
-      ...values,
-    };
-    fetch(`/`, {
+    console.log("Sending values", values)
+    fetch(`/contact.php`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(data),
+      body: JSON.stringify(values),
     })
       .then((response) => response.json())
       .then((data) => {
@@ -87,7 +74,7 @@ export default () => {
         console.error("Error:", error);
         setLoading(false);
         alert(
-          "An error happened, please send us an email to info@letsgrow.com"
+          "An error happened, please call us on +86（0）10 6501 6548"
         );
       });
   };
@@ -124,6 +111,7 @@ export default () => {
               label="电话号码"
               value={values["phone"]}
               name="phone"
+              required
               type="number"
               disabled={loading || sent}
             />

@@ -24,7 +24,7 @@ export default ({
   required,
   validateNow,
 }) => {
-  let error = validateField(type, value, validateNow, required);
+  let errorFound = validateField(type, value, validateNow, required);
   return (
     <div
       className={[container, type === "checkbox" ? checkboxClass : ""].join(
@@ -71,7 +71,7 @@ export default ({
         />
       )}
       {error ? (
-        <p className={error}>{error}</p>
+        <p className={error}>{errorFound}</p>
       ) : (
         <p className={noerror}>correct</p>
       )}
