@@ -65,7 +65,7 @@ export default () => {
     })
       .then((response) => response.json())
       .then((data) => {
-        if (data.message === "success") {
+        if (data === "success") {
           setLoading(false);
           terminate();
         } else throw data;

@@ -3,13 +3,13 @@
 	header("Access-Control-Allow-Headers: Content-Type");
 	require_once('./mail/class.phpmailer.php');
 		
-	if(!isset($_POST['name'])) die("Forbidden.");
+	$data = json_decode(file_get_contents('php://input'), true);
 
-	$subject = 'New message from '.$_POST['name'];
-	$messageText =	'Name: '.$_POST['name'].'<br>'.
-            'Phone: '.$_POST['phone'].'<br>'.
-            'Mail: <a href="mailto:'.$_POST['email'].'">'.$_POST['email'].'</a><br>'.
-            'MEssage: '.$_POST['question'].'<br>';
+	$subject = 'New message from '.$data['name'];
+	$messageText =	'Name: '.$data['name'].'<br>'.
+            'Phone: '.$data['phone'].'<br>'.
+            'Mail: <a href="mailto:'.$data['email'].'">'.$data['email'].'</a><br>'.
+            'Message: '.$data['question'].'<br>';
     
     sendMail($messageText, $subject);
     

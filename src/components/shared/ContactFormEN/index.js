@@ -32,22 +32,6 @@ export default () => {
     }
   }, []);
 
-  let getIP = async () => {
-    return new Promise((resolve) => {
-      try {
-        fetch("https://www.cloudflare.com/cdn-cgi/trace")
-          .then((response) => response.text())
-          .then((data) => {
-            resolve(
-              data?.replace(/ts/g, "")?.replace(/\n/g, "")?.split("=")[3]
-            );
-          });
-      } catch (e) {
-        resolve("");
-      }
-    });
-  };
-
   let terminate = () => {
     console.log("finished");
   };
@@ -81,7 +65,7 @@ export default () => {
     })
       .then((response) => response.json())
       .then((data) => {
-        if (data.message === "success") {
+        if (data === "success") {
           setLoading(false);
           terminate();
         } else throw data;
